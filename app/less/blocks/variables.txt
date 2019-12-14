@@ -1,0 +1,4 @@
+// variables for colors
+@blue: #082362;
+@light-gray: #a9adbb;
+@grey: #707070;

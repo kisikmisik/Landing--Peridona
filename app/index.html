@@ -201,50 +201,58 @@
 				</div>
 
 				<div class="team__worker">
-					<h3 class="team__worker-name">John Grogaries</h3>
-					<p class="team__worker-position">Business Professional</p>
+					<div class="team__worker-info">
+						<h3 class="team__worker-name">John Grogaries</h3>
+						<p class="team__worker-position">Business Professional</p>
+					</div>
 					<img src="img/john.jpg" alt="John Grogaries photo" class="team__worker-img" width="235" height="369">
 				</div>
 
 				<div class="team__worker">
-					<h3 class="team__worker-name">Adam Herison Pole</h3>
-					<p class="team__worker-position">Business Consultent</p>
+					<div class="team__worker-info">
+						<h3 class="team__worker-name">Adam Herison Pole</h3>
+						<p class="team__worker-position">Business Consultent</p>
+					</div>
 					<img src="img/adam.jpg" alt="Adam Herison Pole photo" class="team__worker-img" width="235" height="369">
 				</div>
 
 				<div class="team__worker">
-					<h3 class="team__worker-name">Mani Bomikola</h3>
-					<p class="team__worker-position">Resear Analist</p>
+					<div class="team__worker-info">
+						<h3 class="team__worker-name">Mani Bomikola</h3>
+						<p class="team__worker-position">Resear Analist</p>
+					</div>
 					<img src="img/mani.jpg" alt="Mani Bomikola photo" class="team__worker-img" width="235" height="369">
 				</div>
 
 			</section>
 
-			<section class="news container">
-				<h2 class="news__title section-title">Latest news</h2>
+			<section class="news">
+				<div class="news__wrapper container">
+					<h2 class="section-title news__title">Latest news</h2>
 
-				<p class="news__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
-				<div class="article__list">
-					<article class="news__article article">
-						<h3 class="article__title">Enim ad minim ven magna</h3>
-						<p class="article__desc">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-						<div class="article__bg"></div>
-					</article>
+					<p class="news__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
+					<div class="news__list">
+						<article class="news__article article">
+							<img src="img/news-1.jpg" alt="process of working photo" class="article__img" width="100%" height="auto">
+							<h3 class="article__title">Enim ad minim ven magna</h3>
+							<p class="article__desc">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						</article>
 
-					<article class="news__article article">
-						<h3 class="article__title">Lorem ipsum dolor sit amet</h3>
-						<p class="article__desc">Abore et dolore magna aliqua. Ut enim aliquip ex ea commodo consequat. Duis Excepteur sint occaecat cupidatat non proident, sunt in culpa ...</p>
-						<div class="article__bg"></div>
-					</article>
+						<article class="news__article article">
+							<img src="img/news-2.jpg" alt="process of working photo" class="article__img" width="100%" height="auto">
+							<h3 class="article__title">Lorem ipsum dolor sit amet</h3>
+							<p class="article__desc">Abore et dolore magna aliqua. Ut enim aliquip ex ea commodo consequat. Duis Excepteur sint occaecat cupidatat non proident, sunt in culpa ...</p>		
+						</article>
 
-					<article class="news__article article">
-						<h3 class="article__title">Dolore magna aliqua enim</h3>
-						<p class="article__desc">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
-						<div class="article__bg"></div>
-					</article>
+						<article class="news__article article">
+							<img src="img/news-3.jpg" alt="process of working photo" class="article__img" width="100%" height="auto">
+							<h3 class="article__title">Dolore magna aliqua enim</h3>
+							<p class="article__desc">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+						</article>
+					</div>
+
+					<a href="#" class="news__more button">Learn more</a>
 				</div>
-
-				<a href="#" class="news__more button">Learn more</a>
 			</section>
 
 			<section class="moments container">
@@ -256,11 +264,11 @@
 				</div>
 				
 				<div class="moments__sort sort">
-					<button type="button" class="sort__all">All</button>
-					<button type="button" class="sort__all">Business Plan</button>
-					<button type="button" class="sort__all">Business Development</button>
-					<button type="button" class="sort__all">Marketing</button>
-					<button type="button" class="sort__all">Development</button>
+					<button type="button" class="sort__all sort__btn--checked">All</button>
+					<button type="button" class="sort__plan">Business Plan</button>
+					<button type="button" class="sort__business">Business Development</button>
+					<button type="button" class="sort__marketing">Marketing</button>
+					<button type="button" class="sort__development">Development</button>
 				</div>
 
 				<div class="moments__images">
@@ -279,56 +287,59 @@
 				width="100%" height="405" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 			</section>
 
-			<footer class="footer container">
-				<div class="footer__social">
-					<h3 class="footer__block-title">Peridona</h3>
-					<p class="social__desc">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
-					reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-					<ul class="footer__social-list social">
-						<li class="social__fb"><a href="#"><img src="img/facebook.svg" alt="find us on facebook" width="12"></a></li>
-						<li class="social__twitter"><a href="#"><img src="img/twitter.svg" alt="find us on twitter" width="12"></a></li>
-						<li class="social__insta"><a href="#"><img src="img/instagram.svg" alt="find us on instagram" width="12"></a></li>
-						<li class="social__skype"><a href="#"><img src="img/skype.svg" alt="find us on skype" width="12"></a></li>
-						<li class="social__pinterest"><a href="#"><img src="img/pinterest.svg" alt="find us on pinterest" width="12"></a></li>
-					</ul>
-				</div>
-
-				<div class="footer__resources">
-					<h3 class="footer__block-title">Resources</h3>
-
-					<nav class="footer__resources-menu">
-						<ul class="footer__resources-list">
-							<li><a href="#">Blog</a></li>
-							<li><a href="#">Help center</a></li>
-							<li><a href="#">Community</a></li>
-							<li><a href="#">Marketplace</a></li>
-							<li><a href="#">Career</a></li>
+			<footer class="footer">
+				<div class="footer__wrapper container">
+					<div class="footer__social">
+						<h3 class="footer__block-title">Peridona</h3>
+						<p class="footer__social-desc">Tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, 
+						reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+						<ul class="footer__social-list social">
+							<li class="social__fb"><a href="#"><img src="img/facebook.svg" alt="find us on facebook" width="20"></a></li>
+							<li class="social__twitter"><a href="#"><img src="img/twitter.svg" alt="find us on twitter" width="20"></a></li>
+							<li class="social__insta"><a href="#"><img src="img/instagram.svg" alt="find us on instagram" width="20"></a></li>
+							<li class="social__skype"><a href="#"><img src="img/skype.svg" alt="find us on skype" width="20"></a></li>
+							<li class="social__pinterest"><a href="#"><img src="img/pinterest.svg" alt="find us on pinterest" width="20"></a></li>
 						</ul>
-					</nav>
+					</div>
+
+					<div class="footer__resources">
+						<h3 class="footer__block-title">Resources</h3>
+
+						<nav class="footer__resources-menu">
+							<ul class="footer__resources-list">
+								<li><a href="#">Blog</a></li>
+								<li><a href="#">Help center</a></li>
+								<li><a href="#">Community</a></li>
+								<li><a href="#">Marketplace</a></li>
+								<li><a href="#">Career</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__links">
+						<h3 class="footer__block-title">Links</h3>
+
+						<nav class="footer__links-menu">
+							<ul class="footer__links-list">
+								<li><a href="#">Pricing</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">Forum</a></li>
+								<li><a href="#">Live chat</a></li>
+							</ul>
+						</nav>
+					</div>
+
+					<div class="footer__subscript">
+						<h3 class="footer__block-title">Subscription</h3>
+
+						<p class="footer__subscript-text">Subscribe us to get latest update</p>
+						<input type="email" placeholder="Email" class="footer__subscript-input">
+						<button type="button" class="footer__subscript-btn">Subscribe</button>
+					</div>
 				</div>
 
-				<div class="footer__links">
-					<h3 class="footer__block-title">Links</h3>
-
-					<nav class="footer__links-menu">
-						<ul class="footer__links-list">
-							<li><a href="#">Pricing</a></li>
-							<li><a href="#">Contact</a></li>
-							<li><a href="#">Forum</a></li>
-							<li><a href="#">Live chat</a></li>
-						</ul>
-					</nav>
+				<div class="footer__copyright">Developer - <a href="https://github.com/kisikmisik">Vladimir Nofenko</a> | All rights not reserved
 				</div>
-
-				<div class="footer__subscript">
-					<h3 class="footer__block-title">Subscription</h3>
-
-					<p class="footer__subscript-text">Subscribe us to get latest update</p>
-					<input type="email" placeholder="email">
-					<button type="button">Subscribe</button>
-				</div>
-
-				<div class="footer__copyright">Developer - <a href="https://github.com/kisikmisik">Vladimir Nofenko</a> | All rights not reserved</div>
 			</footer>
 		</main>	
 	</body>

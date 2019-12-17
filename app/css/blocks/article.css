@@ -1,0 +1,23 @@
+.article {
+  background-color: white;
+  width: 370px;
+  min-height: 445px;
+  box-sizing: border-box;
+  margin-bottom: 45px;
+}
+.article__img {
+  margin-bottom: 35px;
+}
+.article__title {
+  padding: 0 35px;
+  margin-top: 0;
+  margin-bottom: 30px;
+  font-family: "rubik-medium", Arial, sans-serif;
+  font-size: 22px;
+  color: #1d253b;
+}
+.article__desc {
+  padding: 0 35px;
+  font-size: 16px;
+  color: #6b6b6b;
+}

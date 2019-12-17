@@ -26,3 +26,19 @@
   font-size: 17px;
   font-family: "rubik-medium", Arial, sans-serif;
 }
+.contact__submit:hover {
+  box-shadow: 0px 0px 5px 0px #ffffff;
+}
+.contact__submit:active {
+  opacity: 0.5;
+}
+.contact__form input:hover,
+.contact__form input:focus {
+  border: none;
+  box-shadow: 0px 0px 5px 0px #ffffff;
+}
+.contact__form textarea:hover,
+.contact__form textarea:focus {
+  border: none;
+  box-shadow: 0px 0px 5px 0px #ffffff;
+}

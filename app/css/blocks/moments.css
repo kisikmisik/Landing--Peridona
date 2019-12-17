@@ -25,6 +25,10 @@
 .moments__images img {
   margin-bottom: 30px;
   cursor: pointer;
+  transition: all 0.5s;
+}
+.moments__images img:hover {
+  transform: scale(1.1, 1.1);
 }
 .moments__images img:last-child {
   margin-top: -172px;

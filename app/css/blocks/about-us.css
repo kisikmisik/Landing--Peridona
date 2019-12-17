@@ -40,6 +40,12 @@
   font-size: 16px;
   font-family: "rubik-medium", Arial, sans-serif;
   margin-right: 30px;
+  transition: all 0.4s;
+}
+.about-us__button:hover {
+  color: #092463;
+  background-color: white;
+  box-shadow: 0px 0px 5px 0px #ffffff;
 }
 .about-us__info {
   margin-left: 490px;
@@ -58,4 +64,10 @@
 }
 .about-us__bottom-wrapper {
   background-color: red;
+}
+.about-us__companies img {
+  transition: all 0.5s;
+}
+.about-us__companies img:hover {
+  transform: scale(1.2, 1.2);
 }

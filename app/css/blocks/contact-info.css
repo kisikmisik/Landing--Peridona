@@ -19,6 +19,13 @@
 }
 .contact-info__list li {
   position: relative;
+  cursor: pointer;
+}
+.contact-info__list li:hover {
+  text-decoration: underline;
+}
+.contact-info__list li:hover:before {
+  opacity: 0.7;
 }
 .contact-info__time:before {
   content: "";

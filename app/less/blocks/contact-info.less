@@ -21,6 +21,14 @@
 
 .contact-info__list li {
 	position: relative;
+	cursor: pointer;
+
+	&:hover {
+		text-decoration: underline;
+		&:before {
+			opacity: 0.7;
+		}
+	}
 }
 
 .contact-info__time:before {

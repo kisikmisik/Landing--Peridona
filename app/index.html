@@ -12,8 +12,8 @@
 		<header class="header container">
 			<img src="img/logo.png" alt="logo peridona" class="header__logo" width="116" height="27">
 
-			<nav class="header__menu main-menu">
-				<ul class="header__menu main-menu">
+			<nav class="header__menu">
+				<ul class="main-menu">
 					<li class="main-menu__item">
 						<a href="#">Home</a>
 					</li>
@@ -60,10 +60,18 @@
 							</div>
 
 							<div class="about-us__companies">
-								<img class="about-us__alisa" src="img/alisa.jpg" alt="alisa boutique logo"  width="82" height="42">
-								<img class="about-us__natural" src="img/natural.jpg" alt="urban logo"  width="106" height="29">
-								<img class="about-us__microvave" src="img/microvave.jpg" alt="microvave hair salon logo"  width="141" height="22">
-								<img class="about-us__urban" src="img/urban.jpg" alt="urban logo"  width="96" height="26">
+								<a href="#" class="about-us__alisa">
+									<img src="img/alisa.jpg" alt="alisa boutique logo"  width="82" height="42">
+								</a>
+								<a href="#" class="about-us__natural">
+									<img src="img/natural.jpg" alt="urban logo"  width="106" height="29">
+								</a>
+								<a href="#" class="about-us__microvave">
+									<img src="img/microvave.jpg" alt="microvave hair salon logo"  width="141" height="22">
+								</a>
+								<a href="#" class="about-us__urban">
+									<img src="img/urban.jpg" alt="urban logo"  width="96" height="26">
+								</a>
 							</div>
 						</div>
 					</div>
@@ -91,9 +99,9 @@
 					<h2 class="contact__title section-title section-title--color">Get in tuch</h2>
 
 					<form action="#" class="contact__form">
-						<input type="text" class="contact__name" placeholder="Enter your name">
-						<input type="email" class="contact__email" placeholder="Enter your email">
-						<textarea class="contact__message" cols="30" rows="10" placeholder="Message"></textarea>
+						<input type="text" class="contact__name" placeholder="Enter your name" minlength="2" maxlength="20" required>
+						<input type="email" class="contact__email" placeholder="Enter your email" maxlength="30" required>
+						<textarea class="contact__message" placeholder="Message" required></textarea>
 						<button type="submit" class="contact__submit">Send</button>
 					</form>
 				</section>
@@ -233,19 +241,25 @@
 					<p class="news__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.</p>
 					<div class="news__list">
 						<article class="news__article article">
-							<img src="img/news-1.jpg" alt="process of working photo" class="article__img" width="100%" height="auto">
+							<a href="#" class="article__link">
+								<img src="img/news-1.jpg" alt="process of working photo" class="article__img" width="100%" height="auto">
+							</a>
 							<h3 class="article__title">Enim ad minim ven magna</h3>
 							<p class="article__desc">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 						</article>
 
 						<article class="news__article article">
-							<img src="img/news-2.jpg" alt="process of working photo" class="article__img" width="100%" height="auto">
+							<a href="#" class="article__link">
+								<img src="img/news-2.jpg" alt="process of working photo" class="article__img" width="100%" height="auto">
+							</a>
 							<h3 class="article__title">Lorem ipsum dolor sit amet</h3>
 							<p class="article__desc">Abore et dolore magna aliqua. Ut enim aliquip ex ea commodo consequat. Duis Excepteur sint occaecat cupidatat non proident, sunt in culpa ...</p>		
 						</article>
 
 						<article class="news__article article">
-							<img src="img/news-3.jpg" alt="process of working photo" class="article__img" width="100%" height="auto">
+							<a href="#" class="article__link">
+								<img src="img/news-3.jpg" alt="process of working photo" class="article__img" width="100%" height="auto">
+							</a>
 							<h3 class="article__title">Dolore magna aliqua enim</h3>
 							<p class="article__desc">Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
 						</article>

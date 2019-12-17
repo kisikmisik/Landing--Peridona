@@ -9,6 +9,11 @@
 }
 .team__worker {
   position: relative;
+  transition: all 0.5s;
+  cursor: pointer;
+}
+.team__worker:hover {
+  transform: scale(1.2, 1.2);
 }
 .team__worker-info {
   position: absolute;

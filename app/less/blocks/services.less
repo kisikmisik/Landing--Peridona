@@ -1,0 +1,91 @@
+.services {
+	width: 100%;
+	background-color: #f5f5f5;
+	padding-top: 130px;
+}
+
+.services__wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	padding-bottom: 110px;
+}
+
+.services__title {
+	width: 400px;
+	margin-right: 15px;
+	position: relative;
+
+	&:after {
+		content: "";
+		position: absolute;
+		right: 0;
+		top: 0;
+		height: 60px;
+		width: 10px;
+		background-image: url("../../img/scroll.png");
+		background-size: contain;
+		background-repeat: no-repeat;
+	}
+}
+
+.services__desc {
+	width: 655px;
+	margin-bottom: 60px;
+	margin-top: 0;
+}
+
+.services__list {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.services__item {
+	width: 370px;
+	height: 170px;
+	padding: 28px 50px;
+	box-sizing: border-box;
+	background-color: white;
+	margin-bottom: 30px;
+	position: relative;
+}
+
+.services__item:after {
+	content: "";
+	position: absolute;
+	top: 40px;
+	left: 50px;
+	background-size: contain;
+	background-repeat: no-repeat;
+	height: 25px;
+	width: 25px;
+}
+
+.services__item--consult:after {
+	background-image: url("../../img/planet.png");
+}
+
+.services__item--audit:after {
+	background-image: url("../../img/diagram-2.png");
+}
+
+.services__item--business:after {
+	background-image: url("../../img/document.png");	
+}
+
+.services__item--training:after {
+	background-image: url("../../img/man.png");
+}
+
+.services__item--planning:after {
+	background-image: url("../../img/money.png");
+}
+
+.services__item--analysis:after {
+	background-image: url("../../img/men.png");
+}
+
+.services__item-title {
+	text-align: center;
+}

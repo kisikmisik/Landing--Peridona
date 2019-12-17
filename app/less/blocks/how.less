@@ -1,3 +1,116 @@
 .how {
-	background-color: yellow;
+	display: flex;
+	justify-content: center;
+	height: 570px;
+}
+
+.how__description {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	background-image: url("../../img/how-bg2.jpg");
+	background-size: cover;
+	background-color: #082362;
+	color: white;
+	padding-top: 60px;
+}
+
+.how__desc-wrapper {
+	width: 420px;
+	padding-right: 120px;
+}
+
+.how__presentation {
+	width: 50%;
+	background-image: url("../../img/how-bg.jpg");
+	background-size: cover;
+	position: relative;
+	display: block;
+}
+
+.how__play-btn {
+	content: "";
+	position: absolute;
+	top: 200px;
+	left: 380px;
+	width: 100px;
+	height: 100px;
+	background-color: #082362;
+	border-radius: 50%;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 37px;
+		left: 38px;
+		width: 25px;
+		height: 26px;
+		background-image: url("../../img/play.svg");
+		background-size: cover;	
+	}
+}
+
+
+.how__title {
+	font-size: 36px;
+	color: white;
+	font-family: "rubik-medium", Arial, sans-serif;
+	margin-top: 0;
+	margin-bottom: 70px;
+}
+
+.how__description-title {
+	font-family: "rubik-medium", Arial, sans-serif;
+	font-size: 18px;
+	padding-left: 70px;
+	position: relative;
+}
+
+.how__description-text {
+	color: #a9adbb;
+	padding-left: 70px;
+}
+
+.how__description-title:before {
+	content: "";
+	position: absolute;
+	left: 3px;
+	top: 5px;
+	width: 46px;
+	height: 46px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.how__description-title--first:after {
+	content: "";
+	position: absolute;
+	left: 15px;
+	top: 17px;
+	width: 23px;
+	height: 23px;
+	background-image: url("../../img/task-complete.jpg");
+	background-size: cover;
+}
+
+.how__description-title--second:after {
+	content: "";
+	position: absolute;
+	left: 13px;
+	top: 19px;
+	width: 25px;
+	height: 19px;
+	background-image: url("../../img/graph-analysis.jpg");
+	background-size: cover;
+}
+
+.how__description-title--third:after {
+	content: "";
+	position: absolute;
+	left: 11px;
+	top: 17px;
+	width: 27px;
+	height: 23px;
+	background-image: url("../../img/diagram.jpg");
+	background-size: cover;
 }

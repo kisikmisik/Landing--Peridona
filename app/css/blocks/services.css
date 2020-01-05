@@ -106,3 +106,18 @@
 .services__item-title {
   text-align: center;
 }
+@media screen and (min-width: 350px) and (max-width: 800px) {
+  .services {
+    padding-top: 60px;
+  }
+  .services .services__title {
+    font-size: 25px;
+    margin-bottom: 50px;
+  }
+  .services__wrapper {
+    padding-bottom: 40px;
+  }
+  .services__list {
+    justify-content: center;
+  }
+}

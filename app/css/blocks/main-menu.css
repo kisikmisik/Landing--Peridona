@@ -1,5 +1,5 @@
 .main-menu {
-  width: 545px;
+  width: 45%;
   display: flex;
   justify-content: space-between;
   height: 100%;
@@ -18,7 +18,6 @@
   padding-top: 40px;
   box-sizing: border-box;
   text-align: center;
-  transition: all 0.3s ease-in-out;
 }
 .main-menu__item a:hover {
   background-color: #082362;
@@ -27,4 +26,30 @@
 .main-menu__item a:active {
   opacity: 0.4;
   text-decoration: none;
+}
+@media screen and (min-width: 350px) and (max-width: 800px) {
+  .main-menu {
+    width: 100%;
+    display: block;
+  }
+  .main-menu__item {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+  .main-menu__item a {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+    height: auto;
+    align-self: center;
+    color: black;
+  }
+  .main-menu li:first-child {
+    border-top: 1px solid rgba(0, 0, 0, 0.4);
+  }
+  .body .main-menu--mobile {
+    height: 0;
+    font-size: 0;
+  }
 }

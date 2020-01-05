@@ -19,6 +19,13 @@
 body {
   font-family: "rubik-regular", Arial, sans-serif;
   font-size: 14px;
+  min-width: 1301px;
+}
+@media screen and (min-width: 350px) and (max-width: 800px) {
+  body {
+    min-width: 350px;
+    max-width: 800px;
+  }
 }
 a {
   text-decoration: none;

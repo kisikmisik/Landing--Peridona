@@ -71,3 +71,43 @@
 .about-us__companies img:hover {
   transform: scale(1.2, 1.2);
 }
+@media screen and (min-width: 350px) and (max-width: 800px) {
+  .about-us {
+    margin-bottom: 30px;
+  }
+  .about-us__info {
+    margin-left: 0;
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .about-us__image {
+    display: none;
+  }
+  .about-us__right {
+    padding-left: 0;
+    padding-top: 20px;
+    width: 100%;
+  }
+  .about-us__title {
+    width: 85%;
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+  .about-us__description {
+    width: 90vw;
+  }
+  .about-us__button {
+    margin-right: 10px;
+  }
+  .about-us__companies {
+    width: 100%;
+    margin: 0;
+    flex-wrap: wrap;
+  }
+  .about-us__companies a {
+    margin-right: 20px;
+  }
+  .about-us__info-wrapper {
+    padding-bottom: 40px;
+  }
+}

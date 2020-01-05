@@ -52,3 +52,21 @@
   width: 40%;
   height: auto;
 }
+@media screen and (min-width: 350px) and (max-width: 800px) {
+  .slider__next,
+  .slider__back {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    top: 48%;
+  }
+  .slider__next {
+    right: 20px;
+  }
+  .slider__back {
+    left: 20px;
+  }
+  .slider__photo {
+    width: 90%;
+  }
+}

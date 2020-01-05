@@ -9,18 +9,16 @@
 
 	presentation.addEventListener('click', function () {
 	    video.classList.remove('visually-hidden');
-	    presentation.style = 'width: 100%; background-color: #082362';
-	    description.style = 'width: 0';
-	    wrapper.style = 'display: none';
-	    play.style = 'display: none';
+	    presentation.classList.add('how__presentation--visible');
+	    description.classList.add('how__description--hidden');
+	    play.style = 'display: none'; 
 	});
 
 	document.addEventListener('click', function (evt) {
 	    if (evt.target === videoClose) {
 	        video.classList.add('visually-hidden');
-	        presentation.style = 'width: 50%';
-	        description.style = 'width: 50%';
-	        wrapper.style = 'display: block';
+	        presentation.classList.remove('how__presentation--visible');
+	    	description.classList.remove('how__description--hidden');
 	        play.style = 'display: block';
 	    }
 	});

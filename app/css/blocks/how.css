@@ -155,3 +155,50 @@
 .how__video-close:hover {
   opacity: 1;
 }
+.how__description--hidden {
+  display: none;
+}
+.how__presentation--visible {
+  width: 100%;
+}
+@media screen and (min-width: 350px) and (max-width: 800px) {
+  .how {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .how__description {
+    width: 100%;
+    padding-bottom: 60px;
+  }
+  .how__desc-wrapper {
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: top;
+    width: 90%;
+  }
+  .how__title {
+    margin-bottom: 35px;
+    font-size: 25px;
+  }
+  .how__description-title {
+    margin-bottom: 0;
+  }
+  .how__presentation {
+    height: 300px;
+    width: 100%;
+  }
+  .how__play-btn {
+    left: 35%;
+    top: 35%;
+  }
+  .how__video {
+    width: 100vw;
+  }
+  .how__video-close {
+    height: 50%;
+  }
+  .how__description--hidden {
+    display: block;
+  }
+}

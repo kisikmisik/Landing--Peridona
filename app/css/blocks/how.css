@@ -188,9 +188,23 @@
     height: 300px;
     width: 100%;
   }
+  .how__presentation:hover {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+  }
   .how__play-btn {
-    left: 35%;
-    top: 35%;
+    position: static;
+    margin: 100px auto;
+    background-image: url('../../img/play.svg');
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .how__play-btn:before {
+    display: none;
+  }
+  .how__play-btn:after {
+    display: none;
   }
   .how__video {
     width: 100vw;

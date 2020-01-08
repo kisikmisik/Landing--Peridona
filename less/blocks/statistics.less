@@ -1,0 +1,68 @@
+.statistics {
+	width: 100%;
+	background-image: url("../../img/hand-bg.jpg");
+	background-size: cover;
+	color: white;
+	padding-top: 85px;
+	padding-bottom: 80px;
+}
+
+.statistics__wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding: 0;
+}
+
+.statistics__counter {
+	width: 100%;
+}
+
+.statistics__digets {
+	font-size: 48px;
+	font-family: "rubik-bold", Arial, sans-serif;
+}
+
+.statistics__digets td {
+	padding-bottom: 25px;
+	width: 304px;
+	box-sizing: border-box;
+}
+
+.statistics__type {
+	font-size: 20px;
+	font-family: "rubik-medium", Arial, sans-serif;
+	color: #b4b4b4;
+}
+
+.statistics__type td {
+	padding-bottom: 35px;
+}
+
+.statistics__desc td {
+	box-sizing: border-box;
+	padding-right: 30px;
+}
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+	.statistics {
+		padding: 40px 0;
+	}
+
+	.statistics__counter {
+		width: 95%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	.statistics__digets {
+		font-size: 25px;
+	}
+
+	.statistics__desc {
+		display: none;
+	}
+
+	.statistics__type {
+		font-size: 16px;
+	}
+}

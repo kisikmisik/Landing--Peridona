@@ -1,0 +1,132 @@
+.about-us {
+	background-image: url("../../img/city-bg.jpg");
+	background-color: #082362;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-bottom: 245px;
+	z-index: -2;
+	padding-top: 5px;
+	height: 838px;
+}
+
+.about-us__title {
+	font-size: 60px;
+	font-family: "rubik-bold", Arial, sans-serif;
+}
+
+.about-us__block {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	color: white;
+}
+
+.about-us__right {
+	padding-left: 100px;
+	padding-top: 55px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.about-us__description {
+	width: 572px;
+	color: #a9adbb;
+	margin-bottom: 50px;
+}
+
+.about-us__button {
+	width: 160px;
+	height: 40px;
+	box-sizing: border-box;
+	background-color: transparent;
+	border: 3px solid white;
+	border-radius: 10px 10px;
+	font-size: 16px;
+	font-family: "rubik-medium", Arial, sans-serif;
+	margin-right: 30px;
+	transition: all 0.4s;
+
+	&:hover {
+		color: #092463;
+		background-color: white;
+		box-shadow: 0px 0px 5px 0px rgba(255, 255, 255, 1);
+	}
+}
+
+.about-us__info {
+	margin-left: 490px;
+	margin-bottom: 170px;
+}
+
+.about-us__companies {
+	width: 760px;
+	height: 125px;
+	margin-left: -100px;
+	border-bottom: 7px solid #858da9;
+	background-color: white;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	box-shadow: 5px 0px 7px 0px rgba(0,0,0,0.25);
+}
+.about-us__bottom-wrapper {
+	background-color: red;
+}
+
+.about-us__companies img {
+	transition: all 0.5s;
+	&:hover {
+		transform: scale(1.2, 1.2);	
+	}
+}
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+	.about-us {
+		margin-bottom: 30px;
+	}
+
+	.about-us__info {
+		margin-left: 0;
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+
+	.about-us__image {
+		display: none;
+	}
+
+	.about-us__right {
+		padding-left: 0;
+		padding-top: 20px;
+		width: 100%;
+	}
+
+	.about-us__title {
+		width: 85%;
+		font-size: 25px;
+		margin-bottom: 30px;
+	}
+
+	.about-us__description {
+		width: 90vw;
+	}
+
+	.about-us__button {
+		margin-right: 10px;
+	}
+
+	.about-us__companies {
+		width: 100%;
+		margin: 0;
+		flex-wrap: wrap;
+	}
+
+	.about-us__companies a {
+		margin-right: 20px;
+	}
+
+	.about-us__info-wrapper {
+		padding-bottom: 40px;
+	}
+}

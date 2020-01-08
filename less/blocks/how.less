@@ -1,0 +1,261 @@
+.how {
+	display: flex;
+	justify-content: center;
+	height: 570px;
+}
+
+.how__description {
+	width: 50%;
+	display: flex;
+	justify-content: flex-end;
+	background-image: url("../../img/how-bg2.jpg");
+	background-size: cover;
+	background-color: #082362;
+	color: white;
+	padding-top: 60px;
+}
+
+.how__desc-wrapper {
+	width: 420px;
+	padding-right: 120px;
+}
+
+.how__presentation {
+	width: 50%;
+	background-image: url("../../img/how-bg.jpg");
+	background-size: cover;
+	position: relative;
+	display: block;
+	cursor: pointer;
+
+	&:hover .how__play-btn:after {
+		opacity: 1;
+	}
+
+	&:hover .how__play-btn {
+		box-shadow: 0px 0px 0px 20px rgba(14, 40, 101, 0.5);
+		transform: scale(1.2, 1.2);
+		transition: all 1s;
+	}
+}
+
+.how__play-btn {
+	content: "";
+	position: absolute;
+	top: 200px;
+	left: 380px;
+	width: 100px;
+	height: 100px;
+	background-color: #082362;
+	border-radius: 50%;
+	box-shadow: 0px 0px 0px 20px rgba(14, 40, 101, 0.01);
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 37px;
+		left: 38px;
+		width: 25px;
+		height: 26px;
+		background-image: url("../../img/play.svg");
+		background-size: cover;	
+	}
+
+	&:after {
+		content: "";
+		position: absolute;
+		top: -50%;
+		left: -50%;
+		width: 205px;
+		height: 205px;
+		border-radius: 50%;
+		background-color: rgba(14, 40, 101, 0.3);
+		box-shadow: 0px 0px 0px 20px rgba(14, 40, 101, 0.1);
+		opacity: 0;
+		transition: all 0.5s;
+	}
+}
+
+
+.how__title {
+	font-size: 36px;
+	color: white;
+	font-family: "rubik-medium", Arial, sans-serif;
+	margin-top: 0;
+	margin-bottom: 70px;
+}
+
+.how__description-title {
+	font-family: "rubik-medium", Arial, sans-serif;
+	font-size: 18px;
+	padding-left: 70px;
+	position: relative;
+}
+
+.how__description-text {
+	color: #a9adbb;
+	padding-left: 70px;
+}
+
+.how__description-title:before {
+	content: "";
+	position: absolute;
+	left: 3px;
+	top: 5px;
+	width: 46px;
+	height: 46px;
+	background-color: white;
+	border-radius: 50%;
+}
+
+.how__description-title--first:after {
+	content: "";
+	position: absolute;
+	left: 15px;
+	top: 17px;
+	width: 23px;
+	height: 23px;
+	background-image: url("../../img/task-complete.jpg");
+	background-size: cover;
+}
+
+.how__description-title--second:after {
+	content: "";
+	position: absolute;
+	left: 13px;
+	top: 19px;
+	width: 25px;
+	height: 19px;
+	background-image: url("../../img/graph-analysis.jpg");
+	background-size: cover;
+}
+
+.how__description-title--third:after {
+	content: "";
+	position: absolute;
+	left: 11px;
+	top: 17px;
+	width: 27px;
+	height: 23px;
+	background-image: url("../../img/diagram.jpg");
+	background-size: cover;
+}
+
+.how__description {
+	transition: width 1s;
+}
+
+.how__video {
+	width: 1200px;
+	margin: 0 auto;
+	height: 100%;
+	transition: width 1s;
+	background-color: #082362;
+}
+
+.how__video iframe {
+	width: 100%;
+	height: 100%;
+	transition: all 2s;
+}
+
+.how__video-close {
+  	position: absolute;
+  	top: 0;
+  	left: 0;
+  	height: 100%;
+  	width: 10%;
+  	background-color: black;
+  	opacity: 0.5;
+  	background-image: url("../../img/close.svg");
+  	background-size: contain;
+  	background-repeat: no-repeat;
+  	background-position: 50%;
+
+  	&:hover {
+  		opacity: 1;
+  	}
+ }
+
+.how__description--hidden {
+	display: none;
+}
+
+.how__presentation--visible {
+	width: 100%;
+}
+
+ @media screen and (min-width: 350px) and (max-width: 800px) {
+ 	.how {
+ 		flex-wrap: wrap;
+ 		height: auto;
+ 	}
+
+	.how__description {
+		width: 100%;
+		padding-bottom: 60px;
+	}
+
+	.how__desc-wrapper {
+		padding: 0 15px;
+		display: flex;
+		flex-direction: column;
+		align-items: top;
+		width: 90%;
+	}
+
+	.how__title {
+		margin-bottom: 35px;
+		font-size: 25px;
+	}
+
+	.how__description-title {
+		margin-bottom: 0;
+	}
+
+	.how__presentation {
+		height: 300px;
+		width: 100%;
+
+
+		&:hover {
+			-webkit-user-select: none;
+			-webkit-touch-callout: none; 
+		}
+	}
+
+	.how__play-btn {
+		position: static;
+		margin: 100px auto;
+
+
+		background-image: url('../../img/play.svg');
+		background-size: 30px;
+		background-repeat: no-repeat;
+		background-position: center;
+		&:before {
+			display: none;
+		}
+
+		&:after {
+			display: none;
+		}
+
+
+		
+	}
+
+	.how__video {
+		width: 100vw;
+	}
+
+	.how__video-close {
+		height: 50%;
+	}
+
+	.how__description--hidden {
+		display: block;
+	}
+
+ }
+

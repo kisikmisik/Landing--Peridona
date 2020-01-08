@@ -1,0 +1,137 @@
+.footer {
+	width: 100%;
+	background-color: #082360;
+	padding-top: 100px;
+	color: white;
+	margin-top: -5px;
+}
+
+.footer a {
+	color: #d9d9d9;
+	font-size: 15px;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.footer__block-title {
+	margin-top: 0;
+	font-size: 22px;
+	font-family: "rubik-medium", Arial, sans-serif;
+	margin-bottom: 40px;
+}
+
+.footer__wrapper {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 70px;
+}
+
+.footer__social {
+	width: 340px;
+}
+
+.footer__social-desc {
+	color: #d9d9d9;
+	font-size: 15px;
+	margin-bottom: 40px;
+}
+
+.footer__resources-list li, .footer__links-list li {
+	margin-bottom: 15px;
+}
+
+.footer__subscript-text {
+	color: #d9d9d9;
+	margin-bottom: 25px;
+}
+
+.footer__subscript-input {
+	width: 370px;
+	box-sizing: border-box;
+	padding: 10px;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid #959595;
+	margin-bottom: 25px;
+}
+
+.footer__subscript-input::placeholder {
+	color: #959595;
+	opacity: 1;
+}
+
+.footer__subscript-btn {
+	display: block;
+	font-size: 15px;
+	font-family: "rubik-bold", Arial, sans-serif;
+	background-color: transparent;
+	border: none;
+}
+
+.footer__copyright {
+	height: 70px;
+	background-color: #001443;
+	color: #949494;
+	font-size: 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+	.footer__wrapper {
+		display: block;
+	}
+
+	.footer {
+		padding-top: 50px;
+	}
+
+	.footer__social {
+		text-align: center;
+		width: 100%;
+	}
+
+	.footer__social-list {
+		width: 60%;
+		margin: 0 auto;
+		justify-content: space-around;
+	}
+
+	.footer__block-title {
+		margin-bottom: 15px;
+		text-align: center;
+	}
+
+	.footer__resources, .footer__social, .footer__links {
+		margin-bottom: 60px;
+	}
+
+	.footer__resources-list, .footer__links-list {
+		display: flex;
+		width: 100%;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		margin: 0 auto;
+	}
+
+	.footer__resources-list li {
+		margin-right: 15px;
+	}
+
+	.footer__subscript {
+		text-align: center;
+	}
+
+	.footer__subscript-input {
+		width: 90%;
+		text-align: center;
+	}
+
+	.footer__subscript-btn {
+		margin: 0 auto;
+		font-size: 18px;
+	}
+}

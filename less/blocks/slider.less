@@ -1,0 +1,84 @@
+.slider {
+	display: none;
+	position: fixed;
+	justify-content: center;
+	align-items: center;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.slider__close {
+	position: absolute;
+	top: 2%;
+	right: 2%;
+	width: 60px;
+	height: 60px;
+	background-image: url("../../img/cross-out.svg");
+	background-size: contain;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.4;
+	}
+}
+
+.slider__back {
+	width: 80px;
+	height: 80px;
+	background-image: url("../../img/back.svg");
+	background-size: contain;
+	cursor: pointer;
+	margin-right: 30px;
+
+	&:hover {
+		opacity: 0.4;
+	}
+}
+
+.slider__next {
+	width: 80px;
+	height: 80px;
+	background-image: url("../../img/next.svg");
+	background-size: contain;
+	cursor: pointer;
+	margin-left: 30px;
+
+	&:hover {
+		opacity: 0.4;
+	}
+}
+
+.slider button {
+	background-color: transparent;
+	border: none;
+}
+
+.slider__photo {
+	width: 40%;
+	height: auto;
+}
+
+@media screen and (min-width: 350px) and (max-width: 800px) {
+	.slider__next, .slider__back {
+		position: absolute;
+		width: 40px;
+		height: 40px;
+		top: 48%;
+	}
+
+	.slider__next {
+		right: 20px;
+	}
+
+	.slider__back {
+		left: 20px;
+	}
+
+
+	.slider__photo {
+		width: 90%;
+	}
+}
